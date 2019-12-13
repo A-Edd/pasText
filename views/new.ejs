@@ -1,0 +1,12 @@
+<% include ./partials/header %>
+
+<form action="/pastes/new" method="POST" onsubmit='return returnPaste()'>
+    <input type="text" class="search-bar" name="title" placeholder="Enter a title for your pasText" required>
+    <br>
+    <textarea name="raw" id='textarea'></textarea>
+    <!-- <div id="heading" contenteditable="true"></div> -->
+	<div id="content" contenteditable="true"></div>
+    <button type="submit">Create</button>>
+</form>
+
+<% include ./partials/footer %>
